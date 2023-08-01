@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson_16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+
+		<main class="page">
+			<div class="page__container">
+				<form action="#" class="page__form form-page">
+					<h3 class="form-page__title">Billing Details</h3>
+					<div class="form-page__lines">
+						<div class="form-page__line">
+							<input required autocomplete="off" placeholder="First name*" name="username" type="text"
+								class="form-page__name input">
+						</div>
+						<div class="form-page__line">
+							<input required autocomplete="off" placeholder="Last name*" name="userlastname" type="text"
+								class="form-page__last-name input">
+						</div>
+						<div class="form-page__line">
+							<input required autocomplete="off" placeholder="Address*" name="useraddress" type="text"
+								class="form-page__address input">
+						</div>
+						<div class="form-page__line">
+							<input autocomplete="off" placeholder="Address line 2" name="useraddress-line-two" type="text"
+								class="form-page__address-line-two input">
+						</div>
+						<div class="form-page__line">
+							<div class="form-page__inp">
+								<input required autocomplete="off" name="country" placeholder="Country*" type="text"
+									class="form-page__country input">
+							</div>
+						</div>
+						<!-- <div class="form-page__line">
+						<label for="select" class="form-page__lable-counry">Country*</label>
+						<select class="form-page__country" id="select" name="country">
+							<option value="Ukraine" class="form-page__option-country">Ukraine</option> 
+							<option value="Germany" class="form-page__option-country">Germany</option> 
+							<option value="USA" class="form-page__option-country">USA</option> 
+						</select>
+					</div> -->
+						<div class="form-page__line">
+							<input required autocomplete="off" type="text" name="city" placeholder="City/Town*"
+								class="form-page__city input">
+						</div>
+						<div class="form-page__line">
+							<input required autocomplete="off" type="text" name="postcode" placeholder="Postcode / ZIP*"
+								class="form-page__postcode input">
+						</div>
+						<div class="form-page__line">
+							<input required autocomplete="off" type="text" name="phone" placeholder="Phone*"
+								class="form-page__phone input">
+						</div>
+						<div class="form-page__line">
+							<input autocomplete="off" type="text" name="postcode" placeholder="Postcode / ZIP*"
+								class="form-page__postcode input">
+						</div>
+						<div class="form-page__line">
+							<input required autocomplete="off" type="text" name="phone" placeholder="Phone*"
+								class="form-page__phone input">
+						</div>
+						<div class="form-page__line">
+							<textarea autocomplete="off" name="additional-information" placeholder="Additional information"
+								class="form-page__text"></textarea>
+						</div>
+					</div>
+					<div class="form-page__checkbox-lines">
+						<div class="form-page__line-checkbox">
+							<input id="account" checked value="yes" name="create-account" type="checkbox"
+								class="form-page__checkbox-input" autocomplete="off">
+							<label class="form-page__checkbox-label" for="account">Create Account</label>
+						</div>
+						<div class="form-page__line-checkbox">
+							<input id="ship" value="yes" name="different-ship-address" type="checkbox"
+								class="form-page__checkbox-input" autocomplete="off">
+							<label class="form-page__checkbox-label" for="ship">Ship to a different address?</label>
+						</div>
+					</div>
+					<h3 class="form-page__title form-page__title_margin">Apply Coupon to get discount!</h3>
+					<div class="form-page__line form-page__line_flex">
+						<input autocomplete="off" name="coupon" placeholder="Coupon code" type="text"
+							class="form-page__coupon">
+						<button class="form-page__button"><span>Apply Code</span></button>
+					</div>
+				</form>
+			</div>
+			<div class="another-page__second-container">
+				<form action="#" class="page-form another-page">
+					<h3 class="another-page__title">Shipping Address</h3>
+					<div class="another-page__lines">
+						<div class="another-page__line">
+							<label for="mail" class="another-page__label">Email Address *</label>
+							<input required autocomplete="off" type="email" name="email" id="mail"
+								class="another-page__email input-another">
+						</div>
+						<div class="another-page__line">
+							<label for="password" class="another-page__label">Password</label>
+							<input autocomplete="off" id="password" type="password" name="pass"
+								class="another-page__password input-another">
+						</div>
+						<div class="another-page__line">
+							<label for="" class="another-page__label another-page__label_margin">Zip/Postal Code</label>
+							<input autocomplete="off" name="zip" type="text" class="another-page__zip input-another">
+						</div>
+						<div class="another-page__text">You already have an account with us.<a href="#" class="account"> Sign
+								in</a> or continue as <a href="#" class="account">guest.</a>
+						</div>
+						<div class="another-page__elements">
+							<button class="another-page__button button"><span>LOGIN</span></button>
+							<a href="#" class="another-page__forgot">Forgot Your Password?</a>
+						</div>
+						<div class="another-page__line">
+							<label for="another-first-name" class="another-page__label">First Name *</label>
+							<input required autocomplete="off" id="another-first-name" name="another-first-name" type="text"
+								class="another-page__first-name input-another">
+						</div>
+						<div class="another-page__line">
+							<label for="another-last-name" class="another-page__label">Last Name *</label>
+							<input autocomplete="off" required name="another-last-name" id="another-last-name" type="text"
+								class="another-page__last-name input-another">
+						</div>
+						<div class="another-page__line">
+							<label for="company" class="another-page__label">Company</label>
+							<input autocomplete="off" name="company" id="company" type="text"
+								class="another-page__company input-another">
+						</div>
+						<div class="another-page__line-address">
+							<label for="another-address" class="another-page__label">Street Address *</label>
+							<div class="another-page__inputs">
+								<input autocomplete="off" required id="another-address" name="another-address" type="text"
+									class="another-page__address input-another">
+								<input autocomplete="off" type="text" name="another-address"
+									class="another-page__address input-another">
+								<input autocomplete="off" type="text" name="another-address"
+									class="another-page__address input-another">
+							</div>
+						</div>
+						<div class="another-page__line">
+							<label for="another-country" class="another-page__country">Country *</label>
+							<input autocomplete="off" required name="another-country" id="another-country" type="text"
+								class="another-page__country input-another">
+						</div>
+						<div class="another-page__line">
+							<label for="state" class="another-page__label">State/Province *</label>
+							<div class="another-page__inp">
+								<input required autocomplete="off" name="state" id="state"
+									placeholder="Please select a region, state or province" type="text"
+									class="another-page__state input-another">
+							</div>
+						</div>
+						<h3 class="another-page__title another-page__title_margin">Shipping Methods</h3>
+						<div class="another-page__line">
+							<div class="another-page__radio radio-items">
+								<div class="radio-items__item-one">
+									<input id="fixed" name="price" checked value="5dollars" autocomplete="off" type="radio"
+										class="radio-item__element">
+									<label for="fixed" class="radio-item__label">$5.00</label>
+									<div class="radio-item__text-one">Fixed</div>
+									<div class="radio-item__text-two">Flat Rate</div>
+								</div>
+								<div class="radio-items__item-two">
+									<input autocomplete="off" id="table-rate" name="price" value="10dollars" type="radio"
+										class="radio-item__element">
+									<label for="" class="radio-item__label">$10.00</label>
+									<div class="radio-item__text-three">Table Rate</div>
+									<div class="radio-item__text-four">Best Way</div>
+								</div>
+							</div>
+						</div>
+						<div class="another-page__buttons">
+							<button class="another-page__button button"><span>NEXT</span></button>
+							<button class="another-page__button-back"><span>BACK</span></button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
